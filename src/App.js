@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { TestFunc } from 'hitpoints-api-client';
+
 function App() {
+  TestFunc()
+    .then( res => console.log( res ));
+
   return (
     <div className="App">
       <header className="App-header">
