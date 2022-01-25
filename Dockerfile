@@ -1,6 +1,6 @@
 FROM node:16-alpine AS builder
 WORKDIR /ui
-COPY package*.json .
+COPY package*.json ./
 RUN apk update \
   && apk add git \
   && npm i
